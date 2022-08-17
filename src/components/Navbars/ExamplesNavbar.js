@@ -98,11 +98,11 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            {/* <NavItem>
+            <NavItem>
               <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
+                <i className="fa fa-home" /> Accueil
               </NavLink>
-            </NavItem> */}
+            </NavItem>
             <NavItem>
               <NavLink
                 href="https://www.ringover.me/EU_X6dOeNDCcD+s5sA"

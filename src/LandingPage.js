@@ -278,9 +278,9 @@ console.log('LANDING LOADED');
             </Row>
           </Container>
         </div> */}
-        <div className="section landing-section text-center" id="Contact">
+        <div className="section landing-section" id="Contact">
           <Container>
-            <Row>
+            <Row className="justify-content-md-center">
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Vous êtes prêts ?</h2>
                 <Form className="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
@@ -333,7 +333,7 @@ console.log('LANDING LOADED');
                     name="description"
                   />
                   <Row>
-                    <Col className="ml-auto mr-auto" md="4">
+                    <Col className="ml-auto mr-auto" md="6">
                       <Button className="btn-fill" color="danger" size="lg" name="submit">
                         Envoyer ma demande
                       </Button>
