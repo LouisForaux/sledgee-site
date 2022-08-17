@@ -58,10 +58,10 @@ function LandingPageHeader() {
             <h3>N'attendez pas que votre ordinateur ne fonctionne plus</h3>
             <br />
             <Button
-              href="#BOOK"
               className="btn-round mr-1"
               color="neutral"
               outline
+              data-co-bot-display="pop-up" data-co-bot="BOT-8030FC5F23" href="#"
             >
               <i className="fa fa-calendar" />
               Prendre un rendez-vous
