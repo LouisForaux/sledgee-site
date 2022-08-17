@@ -1,6 +1,6 @@
 {
-  "name": "SLEDGEE - SITE PUBLIC",
-  "version": "0.1.6",
+  "name": "sledgee-site-publique",
+  "version": "0.1.7",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
