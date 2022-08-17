@@ -11,6 +11,10 @@ import { BrowserTracing } from "@sentry/tracing";
 
 Sentry.init({
   dsn: "https://bdaff428c0b94c7c9e8fbae06c238785@o921091.ingest.sentry.io/6657003",
+  initialScope: scope => {
+    scope.setTags({ a: "production" });
+    return scope;
+  },
   integrations: [new BrowserTracing()],
   release: "my-project-name@" + process.env.npm_package_version,
 
@@ -18,6 +22,7 @@ Sentry.init({
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
+  autoSessionTracking: false,
 });
 function Index() {
   return (
