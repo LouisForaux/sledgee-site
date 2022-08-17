@@ -12,6 +12,7 @@ import { BrowserTracing } from "@sentry/tracing";
 Sentry.init({
   dsn: "https://bdaff428c0b94c7c9e8fbae06c238785@o921091.ingest.sentry.io/6657003",
   integrations: [new BrowserTracing()],
+  release: "my-project-name@" + process.env.npm_package_version,
 
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
