@@ -8,6 +8,8 @@ import AppAppBar from './modules/views/AppAppBar';
 import withRoot from './modules/withRoot';
 import * as Sentry from "@sentry/react";
 import { BrowserTracing } from "@sentry/tracing";
+var pjson = require('../package.json');
+
 
 Sentry.init({
   dsn: "https://bdaff428c0b94c7c9e8fbae06c238785@o921091.ingest.sentry.io/6657003",
@@ -16,7 +18,7 @@ Sentry.init({
     return scope;
   },
   integrations: [new BrowserTracing()],
-  release: "sledgee-site-publique@" + process.env.npm_package_version,
+  release: "sledgee-site-publique@" + pjson.version,
 
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
