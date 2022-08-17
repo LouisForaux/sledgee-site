@@ -57,43 +57,16 @@ console.log('LANDING LOADED');
         <div className="section text-center">
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
-                <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
-                </h5>
-                <br />
-                <Button
-                  className="btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  See Details
-                </Button>
-              </Col>
-            </Row>
-            <br />
-            <br />
-            <Row>
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">Besoin de graphisme ?</h4>
                     <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      Nous avons également la capacité de vous fournir un logo et des élements marketings basés sur votre site internet
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
@@ -103,14 +76,10 @@ console.log('LANDING LOADED');
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
+                    <h4 className="info-title">Nouvelles idées ?</h4>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                      Vous voulez un site internet innovant et basé sur vos idées et besoins ? Vous êtes au bon endroit !
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
@@ -120,14 +89,10 @@ console.log('LANDING LOADED');
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title">Statistiques</h4>
                     <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                      Dans chaque offre de création de site internet, nous vous fournissons des statistiques. Votre plateforme auto-hébergée, pour être 100% conforme RGPD !
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
@@ -137,23 +102,19 @@ console.log('LANDING LOADED');
                     <i className="nc-icon nc-sun-fog-29" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
+                    <h4 className="info-title">N'importe quand</h4>
                     <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
+                      Uniquement en début de journée ou en fin de journée pour votre dépannage ? Nous nous adaptons à vos besoins ! Et toujours au même prix, 35€/heure, déplacement inclus
                     </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
                   </div>
                 </div>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        {/* <div className="section section-dark text-center hidden" >
           <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <h2 className="title">A propos de nous</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
@@ -320,37 +281,65 @@ console.log('LANDING LOADED');
               </Col>
             </Row>
           </Container>
-        </div>
-        <div className="section landing-section">
+        </div> */}
+        <div className="section landing-section text-center" id="Contact">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
-                <Form className="contact-form">
+                <h2 className="text-center">Vous êtes prêts ?</h2>
+                <Form className="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <input type="hidden" name="oid" value="00D7Q00000AAI40" />
+                    <input type="hidden" name="retURL" value="https://sledgee.com/thanks" />
+
                   <Row>
                     <Col md="6">
-                      <label>Name</label>
+                      <label>Prénom</label>
                       <InputGroup>
-                        <Input placeholder="Name" type="text" />
+                        <Input placeholder="Prénom" type="text" name="first_name"/>
+                      </InputGroup>
+                    </Col>
+                    <Col md="6">
+                      <label>Nom</label>
+                      <InputGroup>
+                        <Input placeholder="Nom" type="text" name="last_name"/>
                       </InputGroup>
                     </Col>
                     <Col md="6">
                       <label>Email</label>
                       <InputGroup>
-                        <Input placeholder="Email" type="text" />
+                        <Input placeholder="Email" type="email" name="email"/>
+                      </InputGroup>
+                    </Col>
+                    <Col md="6">
+                      <label>Ville</label>
+                      <InputGroup>
+                        <Input placeholder="Ville" type="text" name="city"/>
+                      </InputGroup>
+                    </Col>
+                    <Col md="6">
+                      <label>Entreprise</label>
+                      <InputGroup>
+                        <Input placeholder="Entreprise" type="text" name="company"/>
+                      </InputGroup>
+                    </Col>
+                    <Col md="6">
+                      <label>Téléphone</label>
+                      <InputGroup>
+                        <Input placeholder="Téléphone" type="phone" name="phone"/>
                       </InputGroup>
                     </Col>
                   </Row>
                   <label>Message</label>
                   <Input
-                    placeholder="Tell us your thoughts and feelings..."
+                    placeholder="Décrivez-nous votre projet ou problème."
                     type="textarea"
                     rows="4"
+                    name="description"
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
+                      <Button className="btn-fill" color="danger" size="lg" name="submit">
+                        Envoyer ma demande
                       </Button>
                     </Col>
                   </Row>

@@ -31,26 +31,18 @@ function DemoFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
+                  href="https://panel.sledgee.com"
                   target="_blank"
                 >
-                  Creative Tim
+                  Espace client et hébergement web/vps
                 </a>
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
+                  href="https://panel.sledgee.com/personal-data-and-general-privacy-agreement"
                   target="_blank"
                 >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
-                >
-                  Licenses
+                  Mentions légales et RGPD
                 </a>
               </li>
             </ul>
@@ -58,7 +50,7 @@ function DemoFooter() {
           <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              <i className="fa fa-heart heart" /> by SLEDGEE
             </span>
           </div>
         </Row>
