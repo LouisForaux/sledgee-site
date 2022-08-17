@@ -16,7 +16,7 @@ Sentry.init({
     return scope;
   },
   integrations: [new BrowserTracing()],
-  release: "my-project-name@" + process.env.npm_package_version,
+  release: "sledgee-site-publique@" + process.env.npm_package_version,
 
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
