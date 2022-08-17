@@ -13,18 +13,15 @@ var pjson = require('../package.json');
 
 Sentry.init({
   dsn: "https://bdaff428c0b94c7c9e8fbae06c238785@o921091.ingest.sentry.io/6657003",
-  initialScope: scope => {
-    scope.setTags({ a: "production" });
-    return scope;
-  },
+  
   integrations: [new BrowserTracing()],
   release: "sledgee-site-publique@" + pjson.version,
 
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
-  tracesSampleRate: 1.0,
-  autoSessionTracking: false,
+  // tracesSampleRate: 1.0,
+  // autoSessionTracking: false,
 });
 function Index() {
   return (
