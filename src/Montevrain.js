@@ -130,7 +130,7 @@ function Montevrain() {
           <Container>
             <Row>
               <Col md="12">
-              <iframe width='100%' height='750px' src='https://booking.sledgee.com/portal-embed#/customer/142867000000030154' frameborder='0' allowfullscreen='' > </iframe>
+              <iframe width='100%' height='750px' src='https://booking.sledgee.com/portal-embed#/customer/142867000000030154' frameborder='0' allowfullscreen='' title="Rendez-Vous Montevrain" > </iframe>
               </Col>
             </Row>
           </Container>
