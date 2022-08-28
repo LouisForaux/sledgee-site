@@ -104,6 +104,11 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink to="/depannage/montevrain" tag={Link}>
+                <i className="fa fa-mountain-city" /> Dépannage Montévrain
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink
                 href="https://www.ringover.me/EU_X6dOeNDCcD+s5sA"
                 target="_blank"

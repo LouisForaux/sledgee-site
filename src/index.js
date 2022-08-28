@@ -16,6 +16,7 @@ import "./assets/demo/demo.css";
 import * as Sentry from "@sentry/react";
 import { BrowserTracing } from "@sentry/tracing";
 import Thanks from './Thanks';
+import Montevrain from './Montevrain';
 
 var pjson = require('../package.json');
 
@@ -38,6 +39,7 @@ root.render(
     <Routes>
       <Route path="/index" element={<LandingPage />} />
       <Route path="/thanks" element={<Thanks />} />
+      <Route path="/depannage/montevrain" element={<Montevrain />} />
       <Route path="/" element={<Navigate replace to="/index" />} />
     </Routes>
   </BrowserRouter>
