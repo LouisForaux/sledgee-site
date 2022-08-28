@@ -59,8 +59,7 @@ function Montevrain() {
                 <Button
                   className="btn-round"
                   color="info"
-                  href="#Rendez-Vous"
-                  onClick={(e) => e.preventDefault()}
+                  href="#RendezVous"
                 >
                   Prendre un rendez-vous
                 </Button>
@@ -127,7 +126,7 @@ function Montevrain() {
           </Container>
         </div>
 
-        <div className="section text-center" id="Rendez-vous">
+        <div className="section text-center" id="RendezVous">
           <Container>
             <Row>
               <Col md="12">
