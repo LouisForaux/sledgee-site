@@ -120,8 +120,7 @@ function ExamplesNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="#Contact"
-                target="_blank"
+                href="/index#Contact"
               >
                 <i className="nc-icon nc-spaceship"></i> NOUS CONTACTER
               </Button>

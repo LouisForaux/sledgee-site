@@ -38,6 +38,7 @@ function LandingPage() {
 
 console.log('LANDING LOADED');
   document.documentElement.classList.remove("nav-open");
+  document.title = 'SLEDGEE - Votre référence web en Seine-Et-Marne';
   React.useEffect(() => {
     document.body.classList.add("profile-page");
     return function cleanup() {

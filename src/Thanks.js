@@ -35,6 +35,7 @@ function Thanks() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
+    document.title = 'Merci d\'avoir envoyé votre demande - SLEDGEE';
     return function cleanup() {
       document.body.classList.remove("profile-page");
     };
