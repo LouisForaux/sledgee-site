@@ -36,6 +36,7 @@ function Montevrain() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
+    document.title = 'Dépannage informatique Montévrain - SLEDGEE';
     return function cleanup() {
       document.body.classList.remove("profile-page");
     };
