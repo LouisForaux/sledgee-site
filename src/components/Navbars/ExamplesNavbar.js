@@ -78,7 +78,7 @@ function ExamplesNavbar() {
             title="Coded by Creative Tim"
             tag={Link}
           >
-            <img src="assets/img/Sledgee_degrade.png" width="150" height="auto" style={{top:'150px'}} alt="logo"/>
+            <img src="https://sledgee.com/assets/img/Sledgee_degrade.png" width="150" height="auto" style={{top:'150px'}} alt="logo"/>
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
