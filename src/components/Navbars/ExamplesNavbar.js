@@ -72,13 +72,14 @@ function ExamplesNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
-            data-placement="bottom"
+            data-placement="middle"
             to="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="SLEDGEE"
             tag={Link}
+            style={{top:'150px'}}
           >
-            <img src="https://sledgee.com/assets/img/Sledgee_degrade.png" width="150" height="auto" style={{top:'150px'}} alt="logo"/>
+            <img src="https://sledgee.com/assets/img/Sledgee_degrade.png" width="150" height="auto" alt="logo"/>
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
