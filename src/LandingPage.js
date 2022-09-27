@@ -301,7 +301,7 @@ console.log('LANDING LOADED');
                             <label for='First_Name'>Prénom<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='First_Name' name='First Name' maxLength='40'></Input>
+                            <Input type='text' id='First_Name' name='First Name' maxLength='40' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -312,7 +312,7 @@ console.log('LANDING LOADED');
                             <label for='Last_Name'>Nom<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='Last_Name' name='Last Name' maxLength='80'></Input>
+                            <Input type='text' id='Last_Name' name='Last Name' maxLength='80' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -325,7 +325,7 @@ console.log('LANDING LOADED');
                             <label for='Company'>Société<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='Company' name='Company' maxLength='200'></Input>
+                            <Input type='text' id='Company' name='Company' maxLength='200' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -336,7 +336,7 @@ console.log('LANDING LOADED');
                             <label for='Phone'>Téléphone<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='Phone' name='Phone' maxLength='30'></Input>
+                            <Input type='text' id='Phone' name='Phone' maxLength='30' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -351,7 +351,7 @@ console.log('LANDING LOADED');
                           <Input placeholder="Décrivez-nous votre projet ou problème."
                     type="textarea"
                     rows="4"
-                     id='Description' name='Description'></Input>
+                     id='Description' name='Description' required></Input>
                           <div className='zcwf_col_help'></div>
                         </div>
                       </div>
