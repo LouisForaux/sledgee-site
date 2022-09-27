@@ -11,9 +11,7 @@ os: linux
 dist: focal
 strategy: git
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+  provider: netlify
+  site: elaborate-manatee-ca4881
+  auth: $NETLIFY_TOKEN
+  edge: true # opt in to dpl v2
