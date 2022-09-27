@@ -57,13 +57,7 @@ function LandingPageHeader() {
             <h1>Un site ? Une réparation ?</h1>
             <h3>N'attendez pas que votre ordinateur ne fonctionne plus</h3>
             <br />
-            <Button
-              className="btn-round mr-1"
-              color="neutral"
-              outline
-              data-co-bot-display="pop-up" data-co-bot="BOT-8030FC5F23" href="#"
-            >
-              <i className="fa fa-calendar" />
+            <Button className="btn-round contact-button" color="neutral" type="button" outline href="/depannage/montevrain">
               Prendre un rendez-vous
             </Button>
             <span>   </span>

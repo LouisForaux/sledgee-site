@@ -17,6 +17,7 @@ import * as Sentry from "@sentry/react";
 import { BrowserTracing } from "@sentry/tracing";
 import Thanks from './Thanks';
 import Montevrain from './Montevrain';
+import RGPD from './RGPD';
 
 var pjson = require('../package.json');
 
@@ -40,6 +41,7 @@ root.render(
       <Route path="/index" element={<LandingPage />} />
       <Route path="/thanks" element={<Thanks />} />
       <Route path="/depannage/montevrain" element={<Montevrain />} />
+      <Route path="/rgpd" element={<RGPD />} />
       <Route path="/" element={<Navigate replace to="/index" />} />
     </Routes>
   </BrowserRouter>
