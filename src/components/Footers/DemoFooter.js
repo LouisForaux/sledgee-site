@@ -45,6 +45,13 @@ function DemoFooter() {
                   Mentions légales et RGPD
                 </a>
               </li>
+              <li>
+                <a
+                  href="/rgpd"
+                >
+                  Gérez vos cookies
+                </a>
+              </li>
             </ul>
           </nav>
           <div className="credits ml-auto">

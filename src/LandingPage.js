@@ -1,3 +1,4 @@
+ /* eslint-disable */
 /*!
 
 =========================================================
@@ -284,7 +285,89 @@ console.log('LANDING LOADED');
             <Row className="justify-content-md-center">
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Vous êtes prêts ?</h2>
-                <Form className="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <Form action='https://crm.zoho.eu/crm/WebToLeadForm' name="WebToLeads501857000000419035" method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory501857000000419035()' className="contact-form" acceptCharset='UTF-8'>
+                  <input type='text' style={{display: 'none'}} name='xnQsjsdp' value='20693a94d15b4e01dd0c3a25f181bc91cbf989dff7b6ef66dcb601774c014d32' readOnly></input> 
+                  <input type='hidden' name='zc_gad' id='zc_gad' value='' readOnly ></input> 
+                  <input type='text' style={{display: 'none'}} name='xmIwtLD' value='0c7877eea7c0767da04f3037f38bfcfbf1ccb5d38560da92ef4dfb32854e0b99' readOnly></input> 
+                  <input type='text'  style={{display: 'none'}} name='actionType' value='TGVhZHM=' readOnly></input>
+                  <input type='text' style={{display: 'none'}} name='returnURL' value='https&#x3a;&#x2f;&#x2f;sledgee.com&#x2f;thanks' readOnly></input>
+
+                    <input type='text' style={{display: 'none'}} id='ldeskuid' name='ldeskuid'></input>
+                    <input type='text' style={{display: 'none'}} id='LDTuvid' name='LDTuvid'></input>
+                    <Row>
+                      <Col md="6">
+                        <div className='zcwf_row'>
+                          <div className='zcwf_col_lab'>
+                            <label for='First_Name'>Prénom<span >*</span></label>
+                          </div>
+                          <div className='zcwf_col_fld'>
+                            <Input type='text' id='First_Name' name='First Name' maxLength='40'></Input>
+                            <div className='zcwf_col_help'></div>
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md="6">
+                        <div className='zcwf_row'>
+                          <div className='zcwf_col_lab' >
+                            <label for='Last_Name'>Nom<span >*</span></label>
+                          </div>
+                          <div className='zcwf_col_fld'>
+                            <Input type='text' id='Last_Name' name='Last Name' maxLength='80'></Input>
+                            <div className='zcwf_col_help'></div>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                    <Row> 
+                      <Col md="6">
+                        <div className='zcwf_row'>
+                          <div className='zcwf_col_lab' >
+                            <label for='Company'>Société<span >*</span></label>
+                          </div>
+                          <div className='zcwf_col_fld'>
+                            <Input type='text' id='Company' name='Company' maxLength='200'></Input>
+                            <div className='zcwf_col_help'></div>
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md="6">
+                        <div className='zcwf_row'>
+                          <div className='zcwf_col_lab' >
+                            <label for='Phone'>Téléphone<span >*</span></label>
+                          </div>
+                          <div className='zcwf_col_fld'>
+                            <Input type='text' id='Phone' name='Phone' maxLength='30'></Input>
+                            <div className='zcwf_col_help'></div>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <div className='zcwf_row'>
+                        <div className='zcwf_col_lab' >
+                          <label for='Description'>Description de votre projet<span >*</span></label>
+                        </div>
+                        <div className='zcwf_col_fld'>
+                          <Input placeholder="Décrivez-nous votre projet ou problème."
+                    type="textarea"
+                    rows="4"
+                     id='Description' name='Description'></Input>
+                          <div className='zcwf_col_help'></div>
+                        </div>
+                      </div>
+                    </Row>
+                    <Row>
+                      <div className='zcwf_row'>
+                        <div className='zcwf_col_lab'></div>
+                        <div className='zcwf_col_fld'>
+                          <Col md="6">
+                            <Button type='submit' id='formsubmit' className="btn-fill" color="danger" size="lg" value='Soumettre' title='Soumettre'>Soumettre</Button>
+                          </Col>
+                        </div>
+                      </div>
+                    </Row>
+                </Form>
+                {/* <Form className="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                     <input type="hidden" name="oid" value="00D7Q00000AAI40" />
                     <input type="hidden" name="retURL" value="https://sledgee.com/thanks" />
 
@@ -340,7 +423,7 @@ console.log('LANDING LOADED');
                       </Button>
                     </Col>
                   </Row>
-                </Form>
+                </Form> */}
               </Col>
             </Row>
           </Container>
