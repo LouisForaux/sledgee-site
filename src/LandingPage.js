@@ -285,7 +285,7 @@ console.log('LANDING LOADED');
             <Row className="justify-content-md-center">
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Vous êtes prêts ?</h2>
-                <Form action='https://crm.zoho.eu/crm/WebToLeadForm' name="WebToLeads501857000000419035" method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory501857000000419035()' className="contact-form" acceptCharset='UTF-8'>
+                <Form action='https://crm.zoho.eu/crm/WebToLeadForm' name="WebToLeads501857000000419035" method='POST' onSubmit={()=>{return checkMandatory501857000000419035()}} className="contact-form" acceptCharset='UTF-8'>
                   <input type='text' style={{display: 'none'}} name='xnQsjsdp' value='20693a94d15b4e01dd0c3a25f181bc91cbf989dff7b6ef66dcb601774c014d32' readOnly></input> 
                   <input type='hidden' name='zc_gad' id='zc_gad' value='' readOnly ></input> 
                   <input type='text' style={{display: 'none'}} name='xmIwtLD' value='0c7877eea7c0767da04f3037f38bfcfbf1ccb5d38560da92ef4dfb32854e0b99' readOnly></input> 
@@ -301,7 +301,7 @@ console.log('LANDING LOADED');
                             <label for='First_Name'>Prénom<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='First_Name' name='First Name' maxLength='40'></Input>
+                            <Input type='text' id='First_Name' name='First Name' maxLength='40' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -312,7 +312,7 @@ console.log('LANDING LOADED');
                             <label for='Last_Name'>Nom<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='Last_Name' name='Last Name' maxLength='80'></Input>
+                            <Input type='text' id='Last_Name' name='Last Name' maxLength='80' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -325,7 +325,7 @@ console.log('LANDING LOADED');
                             <label for='Company'>Société<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='Company' name='Company' maxLength='200'></Input>
+                            <Input type='text' id='Company' name='Company' maxLength='200' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -336,7 +336,7 @@ console.log('LANDING LOADED');
                             <label for='Phone'>Téléphone<span >*</span></label>
                           </div>
                           <div className='zcwf_col_fld'>
-                            <Input type='text' id='Phone' name='Phone' maxLength='30'></Input>
+                            <Input type='text' id='Phone' name='Phone' maxLength='30' required></Input>
                             <div className='zcwf_col_help'></div>
                           </div>
                         </div>
@@ -351,7 +351,7 @@ console.log('LANDING LOADED');
                           <Input placeholder="Décrivez-nous votre projet ou problème."
                     type="textarea"
                     rows="4"
-                     id='Description' name='Description'></Input>
+                     id='Description' name='Description' required></Input>
                           <div className='zcwf_col_help'></div>
                         </div>
                       </div>
