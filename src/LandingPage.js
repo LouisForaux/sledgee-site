@@ -285,7 +285,7 @@ console.log('LANDING LOADED');
             <Row className="justify-content-md-center">
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Vous êtes prêts ?</h2>
-                <Form action='https://crm.zoho.eu/crm/WebToLeadForm' name="WebToLeads501857000000419035" method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory501857000000419035()' className="contact-form" acceptCharset='UTF-8'>
+                <Form action='https://crm.zoho.eu/crm/WebToLeadForm' name="WebToLeads501857000000419035" method='POST' onSubmit={()=>{return checkMandatory501857000000419035()}} className="contact-form" acceptCharset='UTF-8'>
                   <input type='text' style={{display: 'none'}} name='xnQsjsdp' value='20693a94d15b4e01dd0c3a25f181bc91cbf989dff7b6ef66dcb601774c014d32' readOnly></input> 
                   <input type='hidden' name='zc_gad' id='zc_gad' value='' readOnly ></input> 
                   <input type='text' style={{display: 'none'}} name='xmIwtLD' value='0c7877eea7c0767da04f3037f38bfcfbf1ccb5d38560da92ef4dfb32854e0b99' readOnly></input> 
