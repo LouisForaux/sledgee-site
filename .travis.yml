@@ -7,7 +7,9 @@ cache:
 script:
   - npm run build || true
   - npm test
+os: linux
 dist: focal
+strategy: git
 deploy:
   provider: pages
   skip_cleanup: true
